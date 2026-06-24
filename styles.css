@@ -323,3 +323,33 @@ a { color: inherit; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
+.opening h1 {
+  font-size: clamp(2.2667rem, 5.3333vw, 4rem);
+}
+
+.card--hero h1 {
+  font-size: clamp(2.8rem, 5.3333vw, 5rem);
+}
+
+.card--yellow h2,
+.card--blue h2,
+.contact-card h2,
+.help-dialog h2 {
+  font-size: clamp(1.4667rem, 2vw, 2.2667rem);
+}
+
+.closing h2 {
+  font-size: clamp(2.1333rem, 4.6667vw, 4.6667rem);
+}
+
+@media (max-width: 760px) {
+  .closing h2 {
+    font-size: clamp(2.5333rem, 12vw, 4rem);
+  }
+}
+
+@media (max-width: 420px) {
+  .card--hero h1 {
+    font-size: 2.9667rem;
+  }
+}
